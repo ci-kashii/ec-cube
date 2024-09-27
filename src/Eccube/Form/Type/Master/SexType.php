@@ -28,7 +28,7 @@ class SexType extends AbstractType
         $options['sex_options']['required'] = $options['required'];
     }
 
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
             'class' => 'Eccube\Entity\Master\Sex',

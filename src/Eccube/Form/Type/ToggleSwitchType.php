@@ -27,7 +27,7 @@ class ToggleSwitchType extends AbstractType
         $view->vars['label_off'] = $options['label_off'];
     }
 
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
             'label' => false,

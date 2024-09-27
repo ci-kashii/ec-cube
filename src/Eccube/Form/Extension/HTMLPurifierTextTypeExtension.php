@@ -32,7 +32,7 @@ class HTMLPurifierTextTypeExtension extends AbstractTypeExtension
         $this->context = $context;
     }
 
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         if ($this->context->isFront()) {
             $resolver->setDefault('purify_html', true);

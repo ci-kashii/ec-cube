@@ -45,7 +45,7 @@ class RepeatedPasswordType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
             'type' => TextType::class, // type password だと入力欄を空にされてしまうので、widgetで対応

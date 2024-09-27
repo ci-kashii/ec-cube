@@ -42,7 +42,7 @@ class PriceType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $currency = $this->eccubeConfig->get('currency');
         $scale = Currencies::getFractionDigits($currency);
