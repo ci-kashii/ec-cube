@@ -39,7 +39,7 @@ class OrderItemType extends AbstractType
         );
     }
 
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return '_shopping_order_item';
     }

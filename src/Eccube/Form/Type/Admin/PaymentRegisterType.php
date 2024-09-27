@@ -116,7 +116,7 @@ class PaymentRegisterType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'payment_register';
     }

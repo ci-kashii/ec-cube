@@ -41,7 +41,7 @@ class LoginHistoryStatusType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'login_history_status';
     }

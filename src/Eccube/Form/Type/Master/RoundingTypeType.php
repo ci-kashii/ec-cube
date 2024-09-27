@@ -32,7 +32,7 @@ class RoundingTypeType extends AbstractType
         return MasterType::class;
     }
 
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'rounding_type';
     }

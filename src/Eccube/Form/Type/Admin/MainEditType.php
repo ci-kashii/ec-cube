@@ -293,7 +293,7 @@ class MainEditType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'main_edit';
     }

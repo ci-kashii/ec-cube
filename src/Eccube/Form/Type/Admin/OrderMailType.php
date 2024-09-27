@@ -75,7 +75,7 @@ class OrderMailType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'admin_order_mail';
     }

@@ -43,7 +43,7 @@ class DeviceTypeType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'device_type';
     }

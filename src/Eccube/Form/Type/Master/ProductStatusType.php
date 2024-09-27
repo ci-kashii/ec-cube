@@ -41,7 +41,7 @@ class ProductStatusType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'product_status';
     }

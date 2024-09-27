@@ -268,7 +268,7 @@ class ShopMasterType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'shop_master';
     }

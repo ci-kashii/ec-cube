@@ -70,7 +70,7 @@ class SearchProductBlockType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'search_product_block';
     }

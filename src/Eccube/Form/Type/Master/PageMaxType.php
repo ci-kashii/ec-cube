@@ -67,7 +67,7 @@ class PageMaxType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'page_max';
     }

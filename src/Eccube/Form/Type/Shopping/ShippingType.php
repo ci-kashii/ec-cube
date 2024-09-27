@@ -278,7 +278,7 @@ class ShippingType extends AbstractType
         );
     }
 
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return '_shopping_shipping';
     }

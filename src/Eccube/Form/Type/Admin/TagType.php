@@ -60,7 +60,7 @@ class TagType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'admin_tag';
     }

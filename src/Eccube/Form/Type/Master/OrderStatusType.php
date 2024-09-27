@@ -71,7 +71,7 @@ class OrderStatusType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'order_status';
     }

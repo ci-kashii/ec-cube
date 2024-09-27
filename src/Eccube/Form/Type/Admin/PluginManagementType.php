@@ -57,7 +57,7 @@ class PluginManagementType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'plugin_management';
     }

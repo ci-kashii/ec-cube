@@ -84,7 +84,7 @@ class ChangePasswordType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'admin_change_password';
     }

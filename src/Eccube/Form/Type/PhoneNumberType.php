@@ -93,7 +93,7 @@ class PhoneNumberType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'phone_number';
     }

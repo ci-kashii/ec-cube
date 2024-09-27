@@ -36,7 +36,7 @@ class SaleTypeType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'sale_type';
     }

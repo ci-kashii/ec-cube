@@ -55,7 +55,7 @@ class TwoFactorAuthType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'admin_two_factor_auth';
     }
