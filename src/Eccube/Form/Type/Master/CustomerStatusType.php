@@ -23,7 +23,7 @@ class CustomerStatusType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         // todo ???
         $options['sex_options']['required'] = $options['required'];

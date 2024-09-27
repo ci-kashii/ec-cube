@@ -45,7 +45,7 @@ class AddressType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $options['pref_options']['required'] = $options['required'];
         $options['addr01_options']['required'] = $options['required'];

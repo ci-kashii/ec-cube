@@ -39,7 +39,7 @@ class KanaType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         // ひらがなをカタカナに変換する
         // 引数はmb_convert_kanaのもの

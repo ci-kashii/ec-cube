@@ -26,7 +26,7 @@ class SearchPluginApiType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $category = $options['category'];
         // Todo: constant for the API key

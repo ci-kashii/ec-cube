@@ -43,7 +43,7 @@ class NameType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $options['lastname_options']['required'] = $options['required'];
         $options['firstname_options']['required'] = $options['required'];

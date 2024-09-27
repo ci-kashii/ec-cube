@@ -31,7 +31,7 @@ class LayoutType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $layout_id = $options['layout_id'];
 

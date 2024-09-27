@@ -64,7 +64,7 @@ class SearchCustomerType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $months = range(1, 12);
         $builder

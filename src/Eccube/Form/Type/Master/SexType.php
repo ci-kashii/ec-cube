@@ -23,7 +23,7 @@ class SexType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $options['sex_options']['required'] = $options['required'];
     }

@@ -52,7 +52,7 @@ class SearchProductType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $Categories = $this->categoryRepository
             ->getList(null, true);

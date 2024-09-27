@@ -29,7 +29,7 @@ class PluginManagementType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $plugin_id = $options['plugin_id'];
 

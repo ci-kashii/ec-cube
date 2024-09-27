@@ -43,7 +43,7 @@ class PostalType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder->addEventSubscriber(new \Eccube\Form\EventListener\ConvertKanaListener());
         $builder->addEventSubscriber(new \Eccube\Form\EventListener\TruncateHyphenListener());

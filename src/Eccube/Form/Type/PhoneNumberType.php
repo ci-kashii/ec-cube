@@ -43,7 +43,7 @@ class PhoneNumberType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         // 全角英数を事前に半角にする
         $builder->addEventSubscriber(new \Eccube\Form\EventListener\ConvertKanaListener());
