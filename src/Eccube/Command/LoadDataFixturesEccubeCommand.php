@@ -44,7 +44,7 @@ class LoadDataFixturesEccubeCommand extends DoctrineCommand
         $this->passwordHasher = $passwordHasher;
     }
 
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Load data fixtures to your database.')
@@ -56,7 +56,7 @@ EOF
             );
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $em = $this->getEntityManager(null);
 
@@ -142,6 +142,6 @@ EOF
 
         $output->writeln(sprintf('  <comment>></comment> <info>%s</info>', 'Finished Successful!'));
 
-        return 0;
+        return Command::SUCCESS;
     }
 }
