@@ -278,7 +278,7 @@ class CsvImportService implements \Iterator, \SeekableIterator, \Countable
      * {@inheritdoc}
      */
     #[\ReturnTypeWillChange]
-    public function seek($pointer)
+    public function seek($pointer): void
     {
         $this->file->seek($pointer);
     }
