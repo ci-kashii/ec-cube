@@ -46,7 +46,7 @@ abstract class AbstractEntity implements \ArrayAccess
     }
 
     #[\ReturnTypeWillChange]
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         $inflector = new Inflector(new NoopWordInflector(), new NoopWordInflector());
         $method = $inflector->classify($offset);
