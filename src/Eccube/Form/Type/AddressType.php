@@ -84,7 +84,7 @@ class AddressType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildView(FormView $view, FormInterface $form, array $options)
+    public function buildView(FormView $view, FormInterface $form, array $options): void
     {
         $builder = $form->getConfig();
         $view->vars['pref_name'] = $builder->getAttribute('pref_name');

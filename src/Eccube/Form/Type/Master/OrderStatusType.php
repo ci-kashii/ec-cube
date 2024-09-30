@@ -41,7 +41,7 @@ class OrderStatusType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildView(FormView $view, FormInterface $form, array $options)
+    public function buildView(FormView $view, FormInterface $form, array $options): void
     {
         /** @var OrderStatus[] $OrderStatuses */
         $OrderStatuses = $options['choice_loader']->loadChoiceList()->getChoices();
@@ -79,7 +79,7 @@ class OrderStatusType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getParent()
+    public function getParent(): ?string
     {
         return MasterType::class;
     }

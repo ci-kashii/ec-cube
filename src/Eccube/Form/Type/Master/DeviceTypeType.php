@@ -35,7 +35,7 @@ class DeviceTypeType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getParent()
+    public function getParent(): ?string
     {
         return MasterType::class;
     }

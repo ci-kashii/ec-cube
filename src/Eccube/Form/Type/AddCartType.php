@@ -172,7 +172,7 @@ class AddCartType extends AbstractType
     /*
      * {@inheritdoc}
      */
-    public function finishView(FormView $view, FormInterface $form, array $options)
+    public function finishView(FormView $view, FormInterface $form, array $options): void
     {
         if ($options['id_add_product_id']) {
             foreach ($view->vars['form']->children as $child) {

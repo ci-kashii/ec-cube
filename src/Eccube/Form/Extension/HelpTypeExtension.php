@@ -37,7 +37,7 @@ class HelpTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritdoc}
      */
-    public function buildView(FormView $view, FormInterface $form, array $options)
+    public function buildView(FormView $view, FormInterface $form, array $options): void
     {
         $view->vars['help'] = $form->getConfig()->getAttribute('help');
     }
