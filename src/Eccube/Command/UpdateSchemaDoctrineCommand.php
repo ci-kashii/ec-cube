@@ -62,7 +62,7 @@ class UpdateSchemaDoctrineCommand extends BaseUpdateSchemaDoctrineCommand
     /**
      * {@inheritDoc}
      */
-    protected function configure(): void: void
+    protected function configure(): void
     {
         parent::configure();
 
